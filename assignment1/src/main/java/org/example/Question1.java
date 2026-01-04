@@ -1,4 +1,4 @@
-
+package org.example;
 
 /* * Question 1 :
   *  A class sixth student required to solve basic mathematics problems. For this he/ she needs to
