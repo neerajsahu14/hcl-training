@@ -11,6 +11,18 @@ public class EntryUseCase {
 		m.put(1, 1);
 		m.put(2, 2);
 		m.put(3, 3);
-		for(Iterator<Entry<Integer,Integer>> s = new Iterator<Entry<Intger,Integer>>();)
+		for(Iterator<Entry<Integer,Integer>> s = new Iterator<>() {
+            @Override
+            public boolean hasNext() {
+                return false;
+            }
+
+            @Override
+            public Entry<Integer, Integer> next() {
+                return null;
+            }
+        };;){
+			Entry<Integer,Integer> e = s.next();
+		}
 	}
 }
